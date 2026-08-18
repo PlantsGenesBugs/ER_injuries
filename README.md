@@ -19,4 +19,11 @@ I completed point 1 fairly easily by swapping the tableOutput UI objects to Data
 ### Original button-related code  
 <img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/button_random_narrative.png" alt="Snapshot of UI and server code used to generate initial reactive button to generate a random narrative from the subset of injuries caused by the product as selected by the user." width="600">
 
-### ChatGPT creates forward and backward buttons  
+### Adding buttons that increment one narrative forwards or backwards on clicking, and loops around  
+
+Changing the UI to have two buttons. A fluidRow is 12 units wide, so the sum total of the column widths have to be adjusted. Pretty straightforward and identical to what the LLM suggested.  
+<img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/button_forw_back.png" alt="Snapshot of UI code used to generate two buttons to move one narrative forwards or backwards when clicked." width="600">
+
+Changing the server function to respond correctly when the previous/next buttons are clicked. 
+
+
