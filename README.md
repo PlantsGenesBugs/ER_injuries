@@ -6,7 +6,7 @@ This app from Chapter 4 of Hadley Wickham's "Mastering Shiny" summarises data as
 
 The initial app looks a little like this...  
 
-<img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/orig_app_screenshot.png" alt="ER injuries app in its original form showing a dropdown box top left from which the user can choose the type of product that cause the injury, and a drop down list top right that allows you to toggle the Y-axis between count and rate. Three summary tables below this summarise the top 5 most frequent diagnoses, body parts affected and locations where the injury happened. Below that is a graph brekaing down the frequency of the injury against patient age, and split according to sex. Underneath that is a narrative sentence explaining how the injury came about." width=200>
+<img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/orig_app_screenshot.png" alt="ER injuries app in its original form showing a dropdown box top left from which the user can choose the type of product that cause the injury, and a drop down list top right that allows you to toggle the Y-axis between count and rate. Three summary tables below this summarise the top 5 most frequent diagnoses, body parts affected and locations where the injury happened. Below that is a graph brekaing down the frequency of the injury against patient age, and split according to sex. Underneath that is a narrative sentence explaining how the injury came about." width=400>
 
 
 The exercise at the end of the chapter instructs the learner to:  
