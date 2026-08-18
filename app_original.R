@@ -87,9 +87,9 @@ ui <- fluidPage(
   ),
   
   fluidRow(
-    column(4, DT::DTOutput("diag")),
-    column(4, DT::DTOutput("body_part")),
-    column(4, DT::DTOutput("location"))
+    column(4, tableOutput("diag")),
+    column(4, tableOutput("body_part")),
+    column(4, tableOutput("location"))
   ),
   
   fluidRow(
@@ -105,19 +105,16 @@ ui <- fluidPage(
 server <- function(input, output, session) {
   selected <- reactive(injuries %>% filter(prod_code == input$code))
   
-  output$diag <- DT::renderDT(
-    count_top(selected(), diag),
-              options=list(searching=FALSE), width = "100%"
+  output$diag <- renderTable(
+    count_top(selected(), diag), width = "100%"
   )
   
-  output$body_part <- DT::renderDT(
-    count_top(selected(), body_part),
-              options=list(searching=FALSE), width = "100%"
+  output$body_part <- renderTable(
+    count_top(selected(), body_part), width = "100%"
   )
   
-  output$location <- DT::renderDT(
-    count_top(selected(), location),
-              options=list(searching=FALSE), width = "100%"
+  output$location <- renderTable(
+    count_top(selected(), location), width = "100%"
   )
   
   summary <- reactive({
