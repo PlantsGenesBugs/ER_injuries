@@ -21,9 +21,7 @@ This is what the original code looked like which generated a single button that,
 <img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/button_random_narrative.png" alt="Snapshot of UI and server code used to generate initial reactive button to generate a random narrative from the subset of injuries caused by the product as selected by the user." width="600">
 
 ### Adding buttons that increment one narrative forwards or backwards on clicking, and loops around  
-Below is a reflection on the code that specifically control the number of buttons in the UI and what they do when the user clicks on them.  
-
-Firstly I changed the UI to have two buttons. A fluidRow is 12 units wide, so the sum total of the column widths have to be adjusted. Pretty straightforward (and identical to what the LLM suggested when I asked).    
+First, I changed the UI to have two buttons. A fluidRow is 12 units wide, so the sum total of the column widths have to be adjusted. Pretty straightforward (and identical to what the LLM suggested when I asked).    
 <img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/button_forw_back.png" alt="Snapshot of UI code used to generate two buttons to move one narrative forwards or backwards when clicked." width="600">
 
 Then I changed the server function to respond correctly when the previous/next buttons are clicked. 
