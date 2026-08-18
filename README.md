@@ -7,11 +7,12 @@ This app from Chapter 4 of Hadley Wickham's "Mastering Shiny" summarises data as
 The initial app looks a little like this...  
 ![ER injuries app in its original form showing a dropdown box top left from which the user can choose the type of product that cause the injury, and a drop down list top right that allows you to toggle the Y-axis between count and rate. Three summary tables below this summarise the top 5 most frequent diagnoses, body parts affected and locations where the injury happened. Below that is a graph brekaing down the frequency of the injury against patient age, and split according to sex.](https://github.com/PlantsGenesBugs/ER_injuries/blob/main/orig_app_screenshot.png)  
 
+
 The exercise at the end of the chapter instructs the learner to:  
 
 1. Add an input control that allows the user to select how many rows to show in the summary tables.
 2. Provide a way to step through every narrative relating to that specific class of injury, with a bonus challenge of making the list of narratives "circular" so that advancing forward from the last narrative takes you to the first.
 
-I completed point 1 fairly easily by swapping the tableOutput UI objects to DataTable (DT) objects and "switching off" the built-in search function. Point 2 required a couple of hours and a lot of discussion with the software developer in my life (who just nudged me along, but never gave me the answers!). I also wanted to know how ChatGPT would have solved this problem after I'd already had a go, so below I paste two LLM solutions from ChatGPT: one from 12 August 2026 where it created a button that would go forward and backward, but not loop, and one from 17 August 2026 where it loops using modulo. 
+I completed point 1 fairly easily by swapping the tableOutput UI objects to DataTable (DT) objects and "switching off" the built-in search function. Point 2 required a couple of hours and a lot of discussion with the software developer in my life (who just nudged me along, but never gave me the answers!). I also wanted to know how ChatGPT would have solved this problem after I'd already had a go, so below I paste two LLM solutions from ChatGPT: one from 12 August 2026 where it created a button that would go forward and backward, but not loop, and one from 17 August 2026 where it loops using modulo. I also compare what the LLM did with how I figured it out on my own.   
 
 
