@@ -17,13 +17,15 @@ The exercise at the end of the chapter instructs the learner to:
 I completed point 1 fairly easily by swapping the tableOutput UI objects to DataTable (DT) objects and "switching off" the built-in search function. Point 2 required a couple of hours of thinking and considering. I also wanted to know how ChatGPT would have solved this problem after I'd already had a go, so below I paste two LLM solutions from ChatGPT: one from 12 August 2026 where it created a button that would go forward and backward, but not loop, and one from 17 August 2026 where it loops using modulo. I also compare what the LLM did with how I figured it out on my own.   
 
 ### Original button-related code  
+This is what the original code looked like which generated a single button that, upon clicking, would return a randomly sampled narrative relating to the selection the user has made in terms of product involved in the injury.  
 <img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/button_random_narrative.png" alt="Snapshot of UI and server code used to generate initial reactive button to generate a random narrative from the subset of injuries caused by the product as selected by the user." width="600">
 
 ### Adding buttons that increment one narrative forwards or backwards on clicking, and loops around  
+Below is a reflection on the code that specifically control the number of buttons in the UI and what they do when the user clicks on them.  
 
-Changing the UI to have two buttons. A fluidRow is 12 units wide, so the sum total of the column widths have to be adjusted. Pretty straightforward and identical to what the LLM suggested.  
+Firstly I changed the UI to have two buttons. A fluidRow is 12 units wide, so the sum total of the column widths have to be adjusted. Pretty straightforward (and identical to what the LLM suggested when I asked).    
 <img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/button_forw_back.png" alt="Snapshot of UI code used to generate two buttons to move one narrative forwards or backwards when clicked." width="600">
 
-Changing the server function to respond correctly when the previous/next buttons are clicked. 
+Then I changed the server function to respond correctly when the previous/next buttons are clicked. 
 
 
