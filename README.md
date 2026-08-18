@@ -36,3 +36,6 @@ If the user clicks on "Next story", and the subset of data contains any rows (li
 ### ChatGPT solution: circular story selection 
 <img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/images/chat_loop.png" alt="" width="600">
 
+### Final app  
+<img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/images/final_app_screenshot.png" alt="" width="600">
+
