@@ -33,5 +33,6 @@ ChatGPT sets an index (line 13) and ensures that a narrative story is shown once
 If the user clicks on "Next story", and the subset of data contains any rows (line 21), the narrative index value is set to whichever is the smallest value (`min`) between the current index +1, or the number of rows in the subset (line 23). So even if the user clicks on the button repeatedly, the narrative_index value will never go above the last row of the subset at hand. Similarly, when the user clicks on the "Previous story" button (line 28), if there is any data in that selection (line 29), the index decreases by one value, unless that value would fall below 1, in which case the index is set to 1 and the first row in the subset is returned (line 31).  
 <img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/chat_no_loop.png" alt="Snapshot of code showing how ChatGPT answered the question about adding a Previous and Next button to the ER injuries app. Description in text." width="600">
 
-
+### ChatGPT solution: circular story selection 
+<img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/chat_loop.png" alt="" width="600">
 
