@@ -14,6 +14,9 @@ The exercise at the end of the chapter instructs the learner to:
 1. Add an input control that allows the user to select how many rows to show in the summary tables.
 2. Provide a way to step through every narrative relating to that specific class of injury, with a bonus challenge of making the list of narratives "circular" so that advancing forward from the last narrative takes you to the first.
 
-I completed point 1 fairly easily by swapping the tableOutput UI objects to DataTable (DT) objects and "switching off" the built-in search function. Point 2 required a couple of hours and a lot of discussion with the software developer in my life (who just nudged me along, but never gave me the answers!). I also wanted to know how ChatGPT would have solved this problem after I'd already had a go, so below I paste two LLM solutions from ChatGPT: one from 12 August 2026 where it created a button that would go forward and backward, but not loop, and one from 17 August 2026 where it loops using modulo. I also compare what the LLM did with how I figured it out on my own.   
+I completed point 1 fairly easily by swapping the tableOutput UI objects to DataTable (DT) objects and "switching off" the built-in search function. Point 2 required a couple of hours of thinking and considering. I also wanted to know how ChatGPT would have solved this problem after I'd already had a go, so below I paste two LLM solutions from ChatGPT: one from 12 August 2026 where it created a button that would go forward and backward, but not loop, and one from 17 August 2026 where it loops using modulo. I also compare what the LLM did with how I figured it out on my own.   
 
+### Original button-related code  
+<img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/button_random_narrative.png" alt="Snapshot of UI and server code used to generate initial reactive button to generate a random narrative from the subset of injuries caused by the product as selected by the user." width="600">
 
+### ChatGPT creates forward and backward buttons  
