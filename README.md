@@ -40,7 +40,6 @@ Effect of applying modulo calculation to e.g. a data set with 8 rows, where x is
 
 
 |  x    | -2 | -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
------------------------------------------------------------  
 |x %% 8 | 6  |  7 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 0 | 0 |   
 
 <img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/images/chat_loop.png" alt="" width="600">
