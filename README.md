@@ -43,6 +43,7 @@ Effect of applying modulo calculation to a data set with 8 rows, where x is the 
 <img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/images/modulo.png" alt="" width="600">
 
 ### Final app  
-This is what my final app looks like. You can interact with it over at [https://plantsgenesbugs-er-injuries.share.connect.posit.cloud](https://plantsgenesbugs-er-injuries.share.connect.posit.cloud)  
-<img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/images/final_app_screenshot.png" alt="" width="600">
+This is what my final app looks like. 
+<img src="https://github.com/PlantsGenesBugs/ER_injuries/blob/main/images/final_app_screenshot.png" alt="" width="600">  
+You can interact with it over at [https://plantsgenesbugs-er-injuries.share.connect.posit.cloud](https://plantsgenesbugs-er-injuries.share.connect.posit.cloud)  
 
